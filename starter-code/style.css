@@ -251,17 +251,27 @@ li {
 /* Style for crew page */
 .crew {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
+    flex-direction: row-reverse;
     align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 400px; 
+  }
+
 .scroll-carousel a {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     margin: 0 10px;
     border-radius: 50%;
     background-size: cover;
@@ -269,8 +279,11 @@ li {
     background-repeat: no-repeat;
     cursor: pointer;
     transition: all 0.3s ease;
-    background-color: #fff;
+    background-color: #555;
 }
+.carousel-item.active {
+    background-color: #fff; 
+  }
 
 .crewContainer {
     margin-top: 2%;
@@ -301,3 +314,8 @@ li {
     font-size: 20px;
 
 }
+
+
+  
+
+  
