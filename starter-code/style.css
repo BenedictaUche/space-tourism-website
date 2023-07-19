@@ -129,6 +129,10 @@ li {
     background-color: #fff;
 }
 
+.span-bold {
+    font-weight: bold;
+}
+
 /* a {
     text-decoration: none;
     color: #fff;
