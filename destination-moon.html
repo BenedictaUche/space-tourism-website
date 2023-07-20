@@ -27,14 +27,9 @@
     />
   </head>
 
-  <style>
-    body {
-      background: url("starter-code/assets/destination/background-destination-desktop.jpg")
-        no-repeat center center fixed;
-    }
-  </style>
+  
 
-  <body>
+  <body class="dist">
     <header>
       <nav
         class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top mt-5"
@@ -82,21 +77,19 @@
                   <a class="nav-link text-light" href="./technology-vehicle.html">03 Technology</a>
                 </li>
               </ul>
-              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button> -->
             </div>
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <div class="container container-fluid">
-        <div class="">
+      <div class="container container-fluid destination-flex">
+
           <h2 class="destination-h2 fw-bold">
             <span class="text-secondary">01</span> PICK YOUR DESTINATION
           </h2>
-        </div>
-        <div class="links col-5">
+
+        <div class="links col-sm-12 col-md-5" id="destination-links">
           <a href="#" id="moonLink">Moon</a>
           <a href="#" id="marsLink">Mars</a>
           <a href="#" id="europaLink">Europa</a>
@@ -107,12 +100,10 @@
       </div>
     </main>
 
-    <!-- 01 Pick your destination Moon Mars Europa Titan Moon See our planet as
-    you’ve never seen it before. A perfect relaxing trip away to help regain
-    perspective and come back refreshed. While you’re there, take in some
-    history by visiting the Luna 2 and Apollo 11 landing sites. Avg. distance
-    384,400 km Est. travel time 3 days -->
 
     <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
   </body>
 </html>

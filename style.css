@@ -30,7 +30,7 @@ picture {
 /* set up the body */
 body {
     line-height: 1.5;
-    /* min-height: 100vh; */
+    
 }
 
 /* make images easier to work with */
@@ -40,13 +40,9 @@ picture {
     display: block;
 }
 
-/* make form elements easier to work with */
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
+ 
+
+
 
 /* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
@@ -132,6 +128,17 @@ li {
     align-items: center;
 }
 
+.home {
+    background: url("/starter-code/assets/home/background-home-desktop.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+.dist {
+    background: url("starter-code/assets/destination/background-destination-desktop.jpg")
+      no-repeat center center;
+      background-size: cover;
+  }
+
 .home-txt {
     font-family: var(--family);
     color: #fff;
@@ -156,7 +163,7 @@ li {
     font-family: var(--family-two);
 }
 
-.round {
+.round-explore {
     padding: 7%;
     border-radius: 100%;
     max-width: 100%;
@@ -165,7 +172,7 @@ li {
     align-items: center;
 }
 
-.round a {
+.round-explore a {
     font-family: var(--family);
     text-align: center;
     font-size: 30px;
@@ -208,9 +215,7 @@ li {
     color: #fff;
     font-family: var(--family-two)
 }
-/* .content-one {
-    margin-left: 15%;
-} */
+
 .content-one h2 {
     font-family: var(--family);
     font-size: 60px;
@@ -226,7 +231,7 @@ li {
 .line {
     content: '';
     display: block;
-    height: 1px;
+    height: 0.3px;
     width: 100%;
     background-color: #fff;
     margin-bottom: 5%;
@@ -317,6 +322,7 @@ li {
 }
 
 
+/* Technology styling */
   
 
   
@@ -355,4 +361,101 @@ li {
     justify-items: center;
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+/* End of technology styling */
+
+
+@media (max-width: 768px) {
+    .home {
+        background: url("/starter-code/assets/home/background-home-mobile.jpg") no-repeat center center;
+        
+    }
+    .home-txt .bottom {
+        width: 100%;
+        font-family: var(--family-two);
+    }
+    .home-txt {
+        margin: 20% 5%;
+    }
+    .round-explore {
+        padding: 5%;
+        border-radius: 100%;
+        max-width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main {
+        text-align: center;
+    }
+    .navbar-toggler-icon {
+        background-color: #fff;
+    }
+    .destination-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .destination-h2 {
+        margin-top: 40%;
+        font-size: 15px;
+    }
+
+    .in-dynamic-routing {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    .destination-image {
+        width:200px;
+        height:200px;
+    }
+    .content-one {
+        text-align: center;
+    }
+
+    .content-one h2 {
+        margin-top: 7%;
+    }
+
+    .distance-travel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+
+    .links {
+        justify-content: space-between;
+        
+    }
+    
+    .links a {
+        text-decoration: none;
+        color: #fff;
+        position: relative;
+        font-family: var(--family-two);
+        margin-left: 15px;
+        font-size: 20px;
+    
+    }
+}
+
+@media (max-width: 1280px) {
+    .home {
+        background: url("/starter-code/assets/home/background-home-tablet.jpg") no-repeat center center;
+    }
+
+    .main {
+        flex-direction: column;
+
+    }
 }
