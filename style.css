@@ -268,7 +268,8 @@ li {
     height: 400px; 
   }
 
-.scroll-carousel a {
+.scroll-carousel a, .scroll-carousel ul li {
+
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -319,3 +320,39 @@ li {
   
 
   
+.techCont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.scroll-carousel ul li { 
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 0 10px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #555;
+}
+
+.scroll-carousel ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
