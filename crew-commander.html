@@ -11,7 +11,7 @@
       href="./assets/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Space tourism website</title>
+    <title>Space tourism website | Crew-Commander</title>
     <link rel="stylesheet" href="./style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -29,7 +29,7 @@
 
   <style>
     body {
-      background: url("./assets/destination/background-destination-desktop.jpg")
+      background: url("starter-code/assets/crew/background-crew-desktop.jpg")
         no-repeat center center fixed;
     }
   </style>
@@ -73,13 +73,13 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">01 Destination</a>
+                  <a class="nav-link text-light" href="./destination-moon.html">01 Destination</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="./crew-commander.html">02 Crew</a>
+                  <a class="nav-link text-light" href="#">02 Crew</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">03 Technology</a>
+                  <a class="nav-link text-light" href="./technology-vehicle.html">03 Technology</a>
                 </li>
               </ul>
               <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -93,17 +93,21 @@
       <div class="container container-fluid">
         <div class="">
           <h2 class="destination-h2 fw-bold">
-            <span class="text-secondary">01</span> PICK YOUR DESTINATION
+            <span class="text-secondary">02</span> MEET YOUR CREW
           </h2>
         </div>
-        <div class="links col-5">
-          <a href="#" id="moonLink">Moon</a>
-          <a href="#" id="marsLink">Mars</a>
-          <a href="#" id="europaLink">Europa</a>
-          <a href="#" id="titanLink">Titan</a>
-        </div>
+        
 
-        <div class="in-dynamic-routing" id="contentContainer"></div>
+        <div class="carousel-container">
+          <div class="crew" id="crewContainer"></div>
+          <div class="scroll-carousel">
+            <a class="carousel-item" id="crewMemberOne" href="#"></a>
+            <a class="carousel-item" id="crewMemberTwo" href="#"></a>
+            <a class="carousel-item" id="crewMemberThree" href="#"></a>
+            <a class="carousel-item" id="crewMemberFour" href="#"></a>
+          </div>
+        </div>
+        
       </div>
     </main>
 
@@ -113,6 +117,7 @@
     history by visiting the Luna 2 and Apollo 11 landing sites. Avg. distance
     384,400 km Est. travel time 3 days -->
 
+    <script src="./crew.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
