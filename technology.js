@@ -10,7 +10,7 @@ function showTech(techIndex) {
       const tech = data.technology;
       const techItems = tech[techIndex];
       console.log(techItems);
-      if (window.innerWidth > 768) {
+      if (window.innerWidth > 768 && window.innerHeight <= 1280) {
         techContainer.innerHTML = `
         <div>
           <img src="${techItems.images.portrait}" class="img-fluid" alt="${techItems.name}">

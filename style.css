@@ -516,6 +516,7 @@ li {
         background: url("starter-code/assets/crew/background-crew-mobile.jpg")
         no-repeat center center;
         background-size: cover;
+        height: 100dvh;
     }
 
     .crewFlex {
@@ -582,7 +583,7 @@ li {
         background: url("starter-code/assets/technology/background-technology-mobile.jpg")
         no-repeat center center;
         background-size: cover;
-        height: 100%;
+        height: 100dvh;
     }
 
     .techFlex {
@@ -643,6 +644,13 @@ li {
         no-repeat center center;
         background-size: cover;
         max-height: 100%;
+    }
+
+    .techBg {
+        background: url("starter-code/assets/technology/background-technology-tablet.jpg")
+        no-repeat center center;
+        background-size: cover;
+        height: 100%;
     }
 
 
@@ -750,6 +758,7 @@ li {
         background: url("starter-code/assets/crew/background-crew-tablet.jpg")
         no-repeat center center;
         background-size: cover;
+
     }
 
     .crewFlex {
@@ -820,5 +829,55 @@ li {
         width: 40px;
     }
 
+
+
+
+    .techFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .techFlex h2 {
+        margin-top: 40%;
+    }
+    .techCont {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .scroll-carousel ul li { 
+        display: inline-flex;
+        
+    }
+
+    .scroll-carousel ul {
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .techCont .crew-cont h2 {
+        text-align: center;
+        font-size: 50px;
+        margin-top: 1px;
+        padding: 7% 0;
+    }
+
+    .techCont .crew-cont .role {
+        font-size: 30px;
+    }
+
+    .techCont .crew-cont .desc {
+        width: 100dvw
+    }
 
 }
