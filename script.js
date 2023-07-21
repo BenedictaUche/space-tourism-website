@@ -1,5 +1,22 @@
 // Get all the links in the navigation
 const navLinks = document.querySelectorAll('.nav-item a');
+const nav = document.querySelector('.navbar');
+const navLinksContainer = document.querySelector('.nav-item');
+
+
+function showNavbarOnLargeScreen() {
+  if (window.innerWidth > 768) {
+    nav.classList.add('show-navbar');
+  } else {
+    nav.classList.remove('show-navbar');
+  }
+}
+
+// Initial check on page load
+showNavbarOnLargeScreen();
+
+window.addEventListener('resize', showNavbarOnLargeScreen);
+
 
 // Loop through the links and add event listeners
 navLinks.forEach(link => {
