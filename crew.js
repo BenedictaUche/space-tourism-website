@@ -10,7 +10,7 @@ function showCrew(crewIndex) {
       console.log(crewMember);
       crewContainer.innerHTML = `
         <div>
-          <img src="${crewMember.images.png}" class="img-fluid crewImg" alt="${crewMember.name}">
+          <img src="${crewMember.images.png}" class="img-fluid crewImg " alt="${crewMember.name}">
           <div class="crewLine"></div>
         </div>
         
